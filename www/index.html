@@ -13,14 +13,29 @@
 
 <body>
     <main class="battlefield">
-        <h1>Elije tu opción:</h1>
-        <button class="button" data-option="0">Piedra</button>
-        <button class="button" data-option="1">Papel</button>
-        <button class="button" data-option="2">Tijera</button>
-        <br>
-        <h1>Tu opción: <span id="playerOption"></span></h1>
-        <h1>Máquina: <span id="computerOption"></span></h1>
-        <h1>Ganador: <span id="resultArea"></span></h1>
+        <div class="stats">
+
+            <h1>Partidas jugadas: <span id="totalMatches">0</span></h1>
+            <h1>Victorias jugador: <span id="playerWins">0</span></h1>
+            <h1>Victorias máquina: <span id="computerWins">0</span></h1>
+            <h1>Empates: <span id="ties">0</span></h1>
+            <br>
+        </div>
+        <div class="options">
+            <hr>
+            <h1>Elije una opción:</h1>
+            <br>
+            <button class="button" data-option="0">Piedra</button>
+            <button class="button" data-option="1">Papel</button>
+            <button class="button" data-option="2">Tijeras</button>
+            <br> <br>
+        </div>
+        <div class="results hidden">
+            <hr>
+            <h1>Tu elección: <span id="playerOption"></span></h1>
+            <h1>Máquina: <span id="computerOption"></span></h1>
+            <h1>Ganador: <span id="resultArea"></span></h1>
+        </div>
     </main>
     <script type="module" src="js/main.js"></script>
 </body>
