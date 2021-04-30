@@ -7,11 +7,22 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
     <title>Piedra, papel, tijeras</title>
 </head>
 
 <body>
-    <script src="js/main.js"></script>
+    <main class="battlefield">
+        <h1>Elije tu opción:</h1>
+        <button class="button" data-option="0">Piedra</button>
+        <button class="button" data-option="1">Papel</button>
+        <button class="button" data-option="2">Tijera</button>
+        <br>
+        <h1>Tu opción: <span id="playerOption"></span></h1>
+        <h1>Máquina: <span id="computerOption"></span></h1>
+        <h1>Ganador: <span id="resultArea"></span></h1>
+    </main>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
